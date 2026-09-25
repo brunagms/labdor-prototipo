@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#002855">
+  <meta name="description" content="Protótipo navegável LabD’Or — e-commerce de exames, check-ups e vacinas.">
+  <title>LabD’Or — Cuide da sua saúde do seu jeito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="shell utility-content">
+        <span>Uma experiência Rede D’Or</span>
+        <nav aria-label="Links de atendimento">
+          <button class="link-button" data-action="go-appointments">Resultados de exames</button>
+          <span>Central 3003-3230</span>
+          <button class="link-button" data-action="show-help">Ajuda</button>
+        </nav>
+      </div>
+    </div>
+    <div class="shell main-nav">
+      <button class="wordmark" data-action="go-home" aria-label="Ir para a página inicial">LabD’Or</button>
+      <button class="menu-toggle" data-action="toggle-menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span><span class="sr-only">Abrir menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal">
+        <button data-action="choose-exams">Exames</button>
+        <button data-action="go-vaccines">Vacinas</button>
+        <button data-action="scroll-home" data-target="checkups">Check-ups</button>
+        <button data-action="scroll-home" data-target="units">Unidades</button>
+        <button data-action="go-appointments">Meus agendamentos</button>
+        <button class="nav-login" data-action="start-auth">Entrar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <div class="footer-wordmark">LabD’Or</div>
+        <p>Uma experiência digital de cuidado e diagnóstico da Rede D’Or.</p>
+      </div>
+      <div>
+        <h3>Cuidado</h3>
+        <button data-action="choose-exams">Exames</button>
+        <button data-action="go-vaccines">Vacinas</button>
+        <button data-action="scroll-home" data-target="checkups">Check-ups</button>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <button data-action="scroll-home" data-target="units">Unidades</button>
+        <button data-action="go-appointments">Meus agendamentos</button>
+        <button data-action="show-help">Central de ajuda</button>
+      </div>
+      <div>
+        <h3>Segurança</h3>
+        <p>Privacidade e acessibilidade</p>
+        <p>Dados protegidos durante toda a jornada</p>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>Protótipo conceitual — dados, preços, coberturas e disponibilidades simulados.</span>
+      <span>© 2026 LabD’Or</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
